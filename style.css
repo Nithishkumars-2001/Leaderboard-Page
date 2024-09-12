@@ -344,12 +344,12 @@ body{
 @media screen and (max-width: 768px){
 
     .leaderboad-box{
-        height: 352vh;
+        height: 220vh;
     }
 
     .Leaderboard-top{
         width: 100%;
-        height: 215vh;
+        height: 132vh;
     }
 
     .Leaderboard-top-show-option{
