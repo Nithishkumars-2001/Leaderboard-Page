@@ -1,0 +1,468 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+}
+
+.leaderboad-box{
+    background-color: wheat;
+    height: 205vh;
+}
+
+.Leaderboard-top{
+    width: 100%;
+    height: 70vh;
+    background-color: tomato;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/* Learner box header options */
+
+.Leaderboard-top-show-option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-arrow i{
+    padding: 10px 0 0 100px;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+}
+
+.left-arrow i:hover{
+    color: yellow;
+}
+
+.day-to-day-top-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    position: relative;
+    border-radius: 30px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.today{
+    color: tomato;
+}
+
+.day-to-day-top-option button{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bg{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 80px;
+    height: 100%;
+    background-color: yellow;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.icons{
+    display: flex;
+    padding: 30px 20px 0 0;
+}
+
+.icons i{
+    padding-right: 40px;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+}
+
+.icons i:hover{
+    color: yellow;
+}
+
+.social-icons{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    background-color: rgb(225, 94, 71);
+    margin: 10px 0 0 -250px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.social-icons i{
+    font-size: 25px;
+}
+
+
+/* Top 3 Learners Box */
+
+.top-3-learners{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.learner{
+    width: 250px;
+    height: 300px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.top-1-learner{
+    display: grid;
+    place-items: center;
+    width: 400px;
+    height: 440px;
+    margin-top: -130px;
+    border-radius: 20px;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.top-3-learner{
+    order: -1;
+}
+
+.top-1-learner .learner{
+    background-color: transparent;
+}
+
+.learner-shield img{
+    position: relative;
+    z-index: 0;
+    width: 200px;
+    height: 200px;
+    margin-top: -40px;
+    filter: drop-shadow(1px 1px 2px gold);
+}
+
+.top-learner-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.rank h3{
+    display: grid;
+    place-items: center;
+    position: relative;
+    float: right;
+    margin: -50px 50px 0 0;
+    background-color: yellow;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.story-point{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.story-point p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px black;
+}
+
+.learner-details .story-point h3{
+    font-size: 18px;
+    padding-left: 10px;
+    color: rgb(255, 183, 2);
+    text-shadow: 0.5px 0.5px 1px black;
+}
+
+.learner-details h6{
+    font-size: 13px;
+}
+
+/* Search box */
+
+.ranks-srch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 30px 0 30px;
+}
+
+.ranks-srch h3{
+    letter-spacing: 1px;
+}
+
+.search{
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    color: black;
+    padding: 15px 20px 15px 20px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.search input{
+    width: 90%;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.search input::placeholder{
+    padding-left: 20px;
+    color: black;
+}
+
+/* Other 7 learners */
+
+.profile-title{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 30px 20px 0 20px;
+    padding: 10px 20px;
+    box-shadow: 0.5px 0.5px 1px black;
+    border-radius: 5px;
+}
+
+.other-learners-list{
+    margin-top: 10px;
+}
+
+.learner-box{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin: 10px 20px 10px 20px;
+    padding: 10px 20px 2px 20px;
+    box-shadow: 0.5px 0.5px 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.learner-box:hover{
+    background-color: aliceblue;
+}
+
+.learner-profiles{
+    display: flex;
+}
+
+.learner-img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile-details{
+    padding-left: 20px;
+}
+
+.profile-details h4{
+    font-size: 20px;
+}
+
+.profile-details h5{
+    color: rgb(199, 186, 186);
+    font-size: 18px;
+}
+
+.profile-points{
+    display: flex;
+    padding-left: 270px;
+}
+
+.profile-points p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px black;
+}
+
+.profile-points h3{
+    font-size: 18px;
+    padding-left: 10px;
+    color: rgb(255, 183, 2);
+    text-shadow: 0.5px 0.5px 1px black;
+}
+
+.profile-rank h3{
+    padding-left: 560px;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .leaderboad-box{
+        height: 352vh;
+    }
+
+    .Leaderboard-top{
+        width: 100%;
+        height: 215vh;
+    }
+
+    .Leaderboard-top-show-option{
+       display: flex;
+       justify-content: center;
+    }
+
+    .left-arrow i{
+        padding: 20px 0 0 20px;
+        font-size: 18px;
+    }
+
+    .day-to-day-top-option{
+        margin: 20px 0 0 40px;
+    }
+
+    .day-to-day-top-option button{
+        font-size: 16px;
+    }
+
+    .icons{
+        padding: 30px 0 0 20px;
+    }
+
+    .icons i{
+        padding-right: 20px;
+        font-size: 18px;
+    }
+
+    .top-3-learners{
+        display: grid;
+        place-items: center;
+        margin-top: 140px;
+    }
+
+    .top-1-learner{
+        width: 350px;
+        height: 440px;
+        margin-top: -120px;
+    }
+
+    .top-2-learner{
+        display: grid;
+        place-items: center;
+        width: 350px;
+        height: 300px;
+        margin-top: 20px;
+        background-color: #fff;
+        border-radius: 20px;
+    }
+
+    .top-3-learner{
+        order: 1;
+        display: grid;
+        place-items: center;
+        width: 350px;
+        height: 300px;
+        margin-top: 20px;
+        background-color: #fff;
+        border-radius: 20px;
+    }
+
+    /* Search box */
+
+    .ranks-srch{
+        margin: 20px 0 0 20px;
+    }
+
+    .ranks-srch h3{
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+
+    .search{
+        width: 50%;
+        margin-right: 20px;
+    }
+    
+    /* Other 7 learners */
+
+    .profile-title h3{
+       font-size: 18px;
+    }
+
+    .learner-img img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile-details{
+        padding-left: 10px;
+    }
+    
+    .profile-details h4{
+        font-size: 16px;
+    }
+
+    .profile-details h5{
+        font-size: 11px;
+        width: 100px;
+    }
+
+    .profile-points{
+        padding-left: 0px;
+    }
+
+    .profile-points h3{
+        font-size: 16px;
+    }
+
+    .profile-rank h3{
+        padding-left: 80px;
+        font-size: 20px;
+    }
+
+}
