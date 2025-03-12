@@ -143,9 +143,10 @@ body{
     height: 440px;
     margin-top: -130px;
     border-radius: 20px;
-    background-image: url(bg.jpg);
+    background-image: url();
     background-position: center;
     background-size: cover;
+    background-color: #fff;
 }
 
 .top-3-learner{
